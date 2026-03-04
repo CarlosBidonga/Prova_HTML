@@ -22,6 +22,7 @@ html body{
 
 .avaca nav ul{
 	display: flex;
+	flex-wrap: no-wrap;
 	position: fixed;
 	text-align: right;
 	top: 0px;
