@@ -16,7 +16,7 @@ html body{
 
 .avaca nav li{
 	list-style-type: none;
-	display: inline-block;
+	display: inline;
 	margin: 0 4px;
 }
 
