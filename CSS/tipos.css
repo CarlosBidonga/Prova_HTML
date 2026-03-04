@@ -19,16 +19,18 @@ p{
 
 .inicio nav ul{
     display: flex;
-    gap: 12px;
+    gap: 16px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
     text-align: right;
     position: fixed;
     right: 0;
-    width: 95.8%;
+    width: calc(95.8% - 40px);
     background-color: rgba(0, 0, 0, .4);
     border: 1px solid black;
-    padding: 17px;
-    margin-top: -18px;
+    padding: 12px 20px;
+    margin-top: 0px;
     margin-right: 10px;
 }
 
@@ -45,20 +47,22 @@ p{
 
 .inicio ul a{
     text-decoration: none;
-    border: 1px solid white;
+    border: 2px solid yellow;
     text-transform: uppercase;
-    background-color: red;
-    color: white;
+    background-color: yellow;
+    color: blue;
     box-shadow: 0 5px 2px black;
     margin: 6px;
-    padding: 8px 15px;
+    padding: 12px 20px;
     border-radius: 30px;
     transition: color .5s linear;
+    letter-spacing: 1.2px;
+    font-weight: bold;
 }
 
 .inicio ul a:hover{
-    background-color: yellow;
-    color: blue;
+    background-color: #00AA00;
+    color: yellow;
     position: relative;
     bottom: 3px;
 }
@@ -93,10 +97,15 @@ h2{
 }
 
 .fim{
-    padding-bottom: 20px;
-    height: 120px;
-    background-color: green;
+    padding: 20px 10px;
+    background-color: #006600;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: white;
 }
 
 .fim h2{
@@ -106,14 +115,18 @@ h2{
 .fim a{
     text-decoration: none;
     font-size: 18px;
-    border: 1px solid white;
-    color: blue;
+    border: 2px solid yellow;
+    color: black;
     background-color: yellow;
-    padding: 15px 25px;
-    margin: 6px;
+    padding: 14px 20px;
+    margin: 10px;
     font-size: 20px;
     border-radius: 30px;
-    box-shadow: 0 7px 2px black;
+    box-shadow: 0 7px 2px rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .fim img{

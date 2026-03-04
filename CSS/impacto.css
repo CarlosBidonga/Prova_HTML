@@ -29,33 +29,39 @@ h2{
 
 .hed nav a{
     text-decoration: none;
-    color: white;
-    border: 1px solid white;
-    padding: 8px 15px;
+    color: blue;
+    border: 2px solid yellow;
+    padding: 12px 20px;
     margin: 6px;
     border-radius: 30px;
-    background-color: red;
+    background-color: yellow;
     text-transform: uppercase;
     box-shadow: 0 5px 2px black;
+    letter-spacing: 1.2px;
+    font-weight: bold;
 }
 
 .hed nav a:hover{
-    background-color: yellow;
-    color: blue;
+    background-color: #00AA00;
+    color: yellow;
 }
+
+
 
 .hed nav ul{
     display: flex;
-    gap: 12px;
+    gap: 16px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
     text-align: right;
     position: fixed;
     top: 0px;
     margin-left: -12px;
     margin-top: 0px;
     border: 1px solid black;
-    width: 97.1%;
-    padding: 17px 8px;
+    width: calc(97.1% - 40px);
+    padding: 12px 20px;
     background-color: rgba(0, 0, 0, .4);
 }
 
@@ -92,15 +98,17 @@ p{
     font-size: 30px;
     text-decoration: none;
     color: black;
-    margin: 6px;
-    border: 1px solid green;
-    padding: 12px;
-    color: blue;
+    margin: 10px;
+    border: 2px solid yellow;
+    padding: 14px 18px;
     border-radius: 40px;
     background: yellow;
     /* background: rgba(0, 0, 0, .2);*/
-    box-shadow: 0px 12px 5px black;
-
+    box-shadow: 0px 12px 5px rgba(0,0,0,0.6);
+    letter-spacing: 0.8px;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .pe footer img{
@@ -118,10 +126,16 @@ p{
 }
 
 .pe{
-	padding-bottom: 20px;
+	padding: 20px 10px;
 	text-align: center;
-	background: green;
+	background: #006600;
 	clear: both;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	color: white;
 }
 
 /* Responsive rules */
