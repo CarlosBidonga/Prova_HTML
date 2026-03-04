@@ -136,7 +136,6 @@ p{
 }
 .foot{
 	clear: both;
-	text-align: center;
 }
 
 .pe footer a{
@@ -164,10 +163,8 @@ footer {
 }
 
 .pe{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: ;
+	text-align: center
+	padding: 0 0 10px 0;
 	background: green;
 	color: yellow;
 }
