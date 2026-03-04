@@ -16,27 +16,29 @@ html body{
 
 .avaca nav li{
 	list-style-type: none;
-	display: inline-block;
-	margin: 0 4px;
+	margin: 0;
 }
 
 .avaca nav ul{
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
 	position: fixed;
 	text-align: right;
 	top: 0px;
-	right: 8px;
+	right: 12px;
 	background-color: rgba(0, 0, 0, .4);
 	border: 1px solid black;
 	padding: 15px 0 18px 0;
 	margin: 0 4px;
-	width: 98.1%;
+	width: 100%;
 }
 
 .avaca ul a{
 	border: 1px solid white;
 	text-decoration: none;
 	color: white;
-	padding: 8px 18px;
+	padding: 8px 10px;
 	margin: ;
 	background: red;
 	border-radius: 50px;
@@ -128,8 +130,7 @@ h2{
 	font-size: 30px;
 	text-decoration: none;
 	color: blue;
-	margin-bottom: 15px;
-	margin-left: 18px;
+	margin: 6px;
 	border: 1px solid green;
 	padding: 12px;
 	border-radius: 40px;

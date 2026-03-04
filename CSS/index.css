@@ -46,7 +46,9 @@ body{
 
 .cabeca nav ul{
     display: flex;
-    
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .cabeca h2{
@@ -108,6 +110,10 @@ footer{
     text-align: center;
     padding-bottom: 30px;
     background-color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 footer h2{
@@ -123,7 +129,7 @@ footer a{
     border-radius: 30px;
     padding: 10px 15px;
     background-color: yellow;
-    margin-left: 6px;
+    margin: 6px;
     box-shadow: 0 5px 2px black;
 }
 
@@ -137,7 +143,7 @@ footer img{
 @media (max-width: 900px) {
     body{margin: 0 8px;}
     .cabeca{position:relative;float:none;top:auto;bottom:auto;width:100%;background-size:cover;padding:12px}
-    .cabeca nav ul{position:static !important;width:100% !important;display:flex;flex-wrap:wrap;justify-content:center;padding:8px}
+    .cabeca nav ul{position:static !important;width:100% !important;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:8px}
     .cabeca img{margin-top:20px;margin-left:auto;display:block;margin-right:auto}
     .des{margin-left:0;width:100%}
     .des h1{font-size:1.6rem}
@@ -147,6 +153,15 @@ footer img{
     .btn{margin:12px auto;display:block}
     .tdg{width:100%;margin:12px 0}
     footer{padding:20px}
+}
+
+/* Footer links group (used on index.html) */
+.footer-links{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 480px) {

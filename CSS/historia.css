@@ -20,11 +20,14 @@ p{
 
 .cabeca nav li{
 	list-style-type: none;
-	display: inline-block;
-	margin: 15px 4px;
+	margin: 0;
 }
 
 .cabeca nav ul{
+	display: flex;
+	gap: 12px;
+	align-items: center;
+	flex-wrap: wrap;
 	text-align: right;
 	position: fixed;
 	top: 0;
@@ -147,6 +150,7 @@ p{
 	border-radius: 40px;
 	background: yellow;
 	box-shadow: 0px 20px 10px black;
+	margin: 6px;
 
 }
 

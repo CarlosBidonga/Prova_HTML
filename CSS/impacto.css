@@ -24,9 +24,7 @@ h2{
 
 .hed nav li{
     list-style: none;
-    margin-top: 4px;
-    margin-right: 0; 
-    display: inline;
+    margin: 0;
 }
 
 .hed nav a{
@@ -34,7 +32,7 @@ h2{
     color: white;
     border: 1px solid white;
     padding: 8px 15px;
-    margin-left: 10px;
+    margin: 6px;
     border-radius: 30px;
     background-color: red;
     text-transform: uppercase;
@@ -47,6 +45,9 @@ h2{
 }
 
 .hed nav ul{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
     text-align: right;
     position: fixed;
     top: 0px;
@@ -88,18 +89,17 @@ p{
 }
 
 .pe footer a{
-	font-size: 30px;
-	text-decoration: none;
-	color: black;
-	margin-bottom: 15px;
-	margin-left: 18px;
-	border: 1px solid green;
-	padding: 12px;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin: 6px;
+    border: 1px solid green;
+    padding: 12px;
     color: blue;
-	border-radius: 40px;
-	background: yellow;
-	/* background: rgba(0, 0, 0, .2);*/
-	box-shadow: 0px 12px 5px black;
+    border-radius: 40px;
+    background: yellow;
+    /* background: rgba(0, 0, 0, .2);*/
+    box-shadow: 0px 12px 5px black;
 
 }
 
