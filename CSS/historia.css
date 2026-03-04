@@ -1,0 +1,202 @@
+html body{
+	height: 100%;
+	margin: 0 12px;
+	background-color: white;
+	text-align: justify;
+}
+
+p{
+	font-size: 28px;
+}
+
+.cabeca{
+	background-image: url(../imagem/9qm.JPG);
+	padding: 12px;
+	height: 300px;
+	background-attachment: ;
+	background-size: cover;
+	background-position: center;
+}
+
+.cabeca nav li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 15px 4px;
+}
+
+.cabeca nav ul{
+	text-align: right;
+	position: fixed;
+	top: 0;
+	right: 8px;
+	margin: 0 5px 0 3px;
+	width: 94.73%;
+	padding-bottom: 4px;
+	border: 1px solid black;
+	background-color: rgba(0, 0, 0, .4);
+}
+
+.cabeca ul a{
+	border: 1px solid white;
+	text-decoration: none;
+	color: white;
+	padding: 8px 18px;
+	margin: 0;
+	background: red;
+	border-radius: 50px;
+	text-transform: uppercase;
+	transition: color .5s linear;
+	box-shadow: 0 5px 2px black;
+}
+
+.cabeca h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	color: green;
+	margin: 50px 250px;
+	background-color: rgba(207, 245, 36, 0.1);
+	border-bottom: 5px solid white;
+	border-radius: 30px;
+}
+
+.cabeca nav a:hover{
+	background: yellow;
+	color: blue;
+}
+
+.for h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 38px;
+	color: yellow;
+	background: blue;
+	border-radius: 40px;
+	padding: 10px;
+	margin: 10px 190px;
+	box-shadow: 0 15px 2px black;
+}
+
+.for h2{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.image{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.prim{
+	margin: 2px;
+}
+
+.prim p{
+	text-align: center;
+	background: rgba(0, 0, 0, .2);
+	padding: 12px 8px;
+	margin: 0 0 30px;
+	width: 284px;
+	border-bottom: 4px solid yellow;
+}
+
+.prim img:hover{
+	width: 306px;
+	height: 153px;
+}
+
+.for1 h2{
+	text-align: center;
+	clear: both;
+	text-transform: uppercase;
+	background-color: blue;
+	margin: 25px 230px 8px;
+	padding: 15px 10px;
+	border-radius: 30px;
+	color: yellow;
+}
+
+.for p{
+	text-align: justify;
+}
+
+.fts{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.fts .ftdrone{
+	margin: 2px;
+}
+.fts p{
+	font-size: 18px;
+	text-align: center;
+}
+.foot{
+	clear: both;
+}
+
+.pe footer a{
+	font-size: 30px;
+	text-decoration: none;
+	color: blue;
+	border: 1px solid white;
+	padding: 12px;
+	border-radius: 40px;
+	background: yellow;
+	box-shadow: 0px 20px 10px black;
+
+}
+
+.pe footer img{
+	margin-bottom: -10px;
+}
+
+footer {
+	padding: 25px;
+}
+
+.pe h2{
+	text-transform: uppercase;
+}
+
+.pe{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: ;
+	background: green;
+	color: yellow;
+}
+
+/* Responsive rules */
+@media (max-width:900px){
+	body{margin:0 8px}
+	.cabeca{height:auto;padding:10px;background-size:cover}
+	.cabeca nav ul{position:static !important;width:100% !important;display:flex;flex-wrap:wrap;justify-content:center;padding:8px}
+	.cabeca h2, .for h1, .for1 h2{margin:12px auto}
+	.prim p{width:100%;padding:10px}
+	.fts{flex-direction:column}
+	.pe{padding:12px}
+}
+
+@media (max-width:480px){
+	.cabeca h2{font-size:1.3rem}
+	p{font-size:16px}
+}
+
+/* Responsive typography (global) */
+:root{
+	--fs-base: clamp(14px, 1.2vw + 10px, 18px);
+	--fs-h1: clamp(20px, 4vw, 40px);
+	--fs-h2: clamp(16px, 3vw, 32px);
+	--fs-nav: clamp(12px, 1.6vw, 18px);
+}
+
+body{font-size:var(--fs-base)}
+h1{font-size:var(--fs-h1)}
+h2{font-size:var(--fs-h2)}
+p{font-size:1rem}
+.cabeca ul a, .pe footer a{font-size:var(--fs-nav)}

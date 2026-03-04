@@ -1,0 +1,190 @@
+html body{
+	height: 100%;
+	margin: 0 12px;
+	text-align: justify;
+	background-color: white;
+}
+
+.avaca{
+	background-image: url(../imagem/brt.jpg);
+	height: 400px;
+	background-attachment: ;
+	background-size: cover;
+	background-position: center;
+	padding-top: 15px;
+}
+
+.avaca nav li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 4px;
+}
+
+.avaca nav ul{
+	position: fixed;
+	text-align: right;
+	top: 0px;
+	right: 8px;
+	background-color: rgba(0, 0, 0, .4);
+	border: 1px solid black;
+	padding: 15px 0 18px 0;
+	margin: 0 4px;
+	width: 98.1%;
+}
+
+.avaca ul a{
+	border: 1px solid white;
+	text-decoration: none;
+	color: white;
+	padding: 8px 18px;
+	margin: ;
+	background: red;
+	border-radius: 50px;
+	text-transform: uppercase;
+	transition: color .5s linear;
+	box-shadow: 0 5px 2px black;
+}
+
+.avaca h2{
+	font-size: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	margin: 120px 250px 0;
+	border-radius: 90px;
+	background: rgba(255, 255, 255, .4);
+	border-bottom: 5px solid yellow;
+	padding: 25px;
+}
+
+.avaca nav a:hover{
+	background: yellow;
+	color: blue;
+}
+
+.ttle h1{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 35px;
+	color: blue;
+	border: 1px solid black;
+	background: yellow;
+	padding: 10px 12px;
+	border-radius: 90px;
+	margin: 8px 220px;
+	box-shadow: 0 14px 5px black;
+}
+
+p{
+	font-size: 25px;
+}
+
+h2{
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1px;
+}
+
+.pcp{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sep{
+	text-align: justify;
+	width: 46%;
+	margin: 2%;
+	border-radius: 50px;
+	background-color: red;
+	box-shadow: 0 15px 8px black;
+}
+
+.sep:hover{
+	position: relative;
+	top: 2px;
+	left: 1px;
+}
+
+.sep h2{
+	font-size: 18px;
+	color: yellow;
+}
+
+.sep p{
+	font-size: 18px;
+}
+
+.bot{
+	clear: both;
+}
+
+.foot{
+	clear: both;
+}
+
+.pe footer a{
+	font-size: 30px;
+	text-decoration: none;
+	color: blue;
+	margin-bottom: 15px;
+	margin-left: 18px;
+	border: 1px solid green;
+	padding: 12px;
+	border-radius: 40px;
+	background: yellow;
+	/* background: rgba(0, 0, 0, .2);*/
+	box-shadow: 0px 12px 5px black;
+
+}
+
+.pe footer img{
+	margin-bottom: -10px;
+}
+
+.pe footer {
+	padding: 20px;
+}
+
+.pe h2{
+	color: yellow;
+}
+
+.pe{
+	padding-bottom: 20px;
+	text-align: center;
+	background: green;
+	clear: both;
+}
+
+/* Responsive overrides */
+@media (max-width:768px){
+	.avaca, .avaca h2{height:auto;padding:12px;margin:0}
+	.avaca nav ul{position:static !important;width:100% !important;display:flex;flex-direction:column;align-items:flex-start;padding:8px}
+	.sep{width:100%;margin:8px 0}
+	.ttle h1{margin:12px auto}
+	.pe footer a{font-size:18px;margin:6px}
+}
+
+@media (max-width:480px){
+    .avaca h2{font-size:1.4rem;padding:10px}
+    .avaca nav ul{padding:6px}
+    .sep p{font-size:0.95rem}
+    p{font-size:18px}
+    .pe footer a{font-size:16px;padding:8px}
+}
+
+/* Responsive typography (global) */
+:root{
+	--fs-base: clamp(14px, 1.2vw + 10px, 18px);
+	--fs-h1: clamp(20px, 4vw, 40px);
+	--fs-h2: clamp(16px, 3vw, 32px);
+	--fs-nav: clamp(12px, 1.6vw, 18px);
+}
+
+body{font-size:var(--fs-base)}
+h1{font-size:var(--fs-h1)}
+h2{font-size:var(--fs-h2)}
+p{font-size:1rem}
+.avaca ul a, .pe footer a{font-size:var(--fs-nav)}
